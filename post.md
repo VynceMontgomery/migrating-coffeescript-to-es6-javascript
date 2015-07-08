@@ -11,7 +11,7 @@ In the meantime, here's what I figured out on my own re-writing Coffee Script as
 
 ## 2 Migrating CoffeeScript to ES6
 
-Here's some of the CoffeeScript I was to migrating. I got a lot of mileage from some class inheritance and heavy reliance on CoffeeScript fat arrows `=>`. Fat arrows in Coffee preserve `this` within the different functions of a class. I miss them SO MUCH! 
+I got a lot of mileage from some class inheritance and heavy reliance on CoffeeScript fat arrows `=>`. Fat arrows in Coffeescript and ES6 inherit their `this` from the outer context.
 
 <!--?prettify lang=coffeescript linenums=true?-->    
 
@@ -78,7 +78,7 @@ The following lessons are by no means an exhaustive or perfected discussion. Jus
 
 ### 3.1 Arrow Functions
 
-ES6 JavaScript has no thin arrow function `->`. Essentially, CoffeeScript `->` == ES6 `=>`. There is no equivalent CoffeScript fat arrow function, and if you got lazy like me, you're going to have to change a lot if you're coming back from the dark side.
+ES6 JavaScript has no thin arrow function `->`. ES6 `=>` is essentially equivalent to CoffeScript fat arrow function. It even allows you to omit the braces and return statement in the case where the function is a single expression.
 
 ![Dark Side Cat](//www.starwarscats.com/wp-content/uploads/2013/01/darth-vader-cat.jpg) 
 
